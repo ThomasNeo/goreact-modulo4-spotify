@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+ GoReact Spotify
+</h1>
 
-## Available Scripts
+<h1 align="center">
+  <img src="src/assets/spotify_react_demo.gif">
+</h1>
 
-In the project directory, you can run:
+# Índice
+- [Sobre](#-sobre)
+- [Tecnologias](#-tecnologias)
+- [Execução do Projeto](#-execução-do-projeto)
 
-### `npm start`
+## 📋 Sobre
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O **GoReact Spotify** é um projeto baseado numa versão antiga do Spotify, onde possui algumas playlists e músicas pré-configuradas para que você possa escutá-las, avançar/passar músicas, pause/play e alteração de volume. Projeto desenvolvido através do Bootcamp da RocketSeat.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Tecnologias
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto utiliza-se das seguintes tecnologias:
 
-### `npm run build`
+- ReactJS;
+- Yarn;
+- Json-server;
+- Eslint;
+- Prettier;
+- EditorConfig;
+- Reactotron.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## 💻 Execução do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para execução do projeto, é necessário ter o Yarn instalado e executar os seguintes comandos no terminal:
 
-### `npm run eject`
+```sh
+# Instalação das dependências
+yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Execução de API Fake com Json-server
+# Esta etapa irá executar o arquivo server.json e irá simular uma API
+json-server -w server.json -p 3001 -d 300
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Abra outro terminal e execute o projeto
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Aguarde um momento para que ocorra a inicialização.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Teste escolher uma playlist e executar a música contida nela, você pode testar adiantar a música, passar para outra música (na playlist com 2 músicas), aumentar/diminuir volume, dar play/pause nas músicas.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
+Desenvolvido 🙃 por Thomas Lossio.
